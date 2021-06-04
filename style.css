@@ -1,47 +1,42 @@
 body {
-    font-family: helvetica, arial, sans-serif;
+	font-family: helvetica, arial, sans-serif;
 }
 
 h1 {
-    color: #3a241d;
-    text-align: center;
+	color: #3a241d;
+	text-align: center;
 }
 
-/* Trying to refactor CSS */
-
 #left-container {
-    left: 0px;
+	left: 0px;
 }
 
 #right-container {
-    right: 0px;
+	right: 0px;
 }
 
-/* Using a class to make a rule with the common
- attributes between the two containers */
- 
 .container {
-    background-color: #eee;
-    top: 0px;
-    position: absolute;
-    height: 100%;
-    padding: 10px;
+	width: 15%;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
 }
 
-/* Trying to use Flexbox */
 .plant-holder {
-    display: flex;
-    flex-wrap: wrap;
-    height: 13%;
+	position: relative;
+	height: 13%;
 	left: -10px;
 }
 
 .plant {
-    position: relative;
-    max-width: 150%;
-    max-height: 150%;
-    z-index: 2;
+	position: absolute;
+	max-width: 150%;
+	max-height: 150%;
+	z-index: 2;
 }
+
+/*https://codepen.io/Rotarepmi/pen/rjpNZY*/
 
 .jar-walls {
 	height: 80%;
@@ -89,21 +84,21 @@ h1 {
 }
 
 .jar-glossy-long {
-    background: #eefeff;
-    height: 25%;
-    width: 2%;
-    border-radius: 1rem;
-    bottom: 16%;
-    position: absolute;
-    left: 6%;
+	width: 3%;
+	height: 20%;
+	border-radius: 2rem;
+	background: #ddfbff;
+	position: absolute;
+	bottom: 20%;
+	left: 5%;
 }
 
 .jar-glossy-short {
-    background: #eefeff;
-    height: 7%;
-    width: 2%;
-    border-radius: 1rem;
-    bottom: 45%;
-    position: absolute;
-    left: 6%;
+	width: 3%;
+	height: 5%;
+	border-radius: 2rem;
+	background: #ddfbff;
+	position: absolute;
+	bottom: 45%;
+	left: 5%;
 }
